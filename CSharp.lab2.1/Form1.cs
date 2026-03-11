@@ -72,21 +72,22 @@ namespace CSharp.lab2._1
             }
         }
 
-        private void buttonResult_Click(object sender, EventArgs e)
+        private void buttonStart_Click(object sender, EventArgs e)
         {
             int number;
             
             try
             {
                 number = int.Parse(this.enteringNumber.Text);
-                if (number > 9999)
+                if (number > 9999 || number < 1)
                 {
-                    MessageBox.Show("Введите корректное число");
+                    MessageBox.Show("Введите значение по условию задачи");
                     return;
                 }
             }
             catch (FormatException) 
             {
+                MessageBox.Show("Введите корректное число");
                 return;
             }
             

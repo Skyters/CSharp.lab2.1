@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             enteringNumber = new TextBox();
             label1 = new Label();
-            buttonResult = new Button();
+            buttonStart = new Button();
             pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -53,15 +53,15 @@
             label1.TabIndex = 2;
             label1.Text = "Введите число от 1 до 9999";
             // 
-            // buttonResult
+            // buttonStart
             // 
-            buttonResult.Location = new Point(104, 65);
-            buttonResult.Name = "buttonResult";
-            buttonResult.Size = new Size(94, 29);
-            buttonResult.TabIndex = 3;
-            buttonResult.Text = "Запуск";
-            buttonResult.UseVisualStyleBackColor = true;
-            buttonResult.Click += buttonResult_Click;
+            buttonStart.Location = new Point(104, 65);
+            buttonStart.Name = "buttonStart";
+            buttonStart.Size = new Size(94, 29);
+            buttonStart.TabIndex = 3;
+            buttonStart.Text = "Запуск";
+            buttonStart.UseVisualStyleBackColor = true;
+            buttonStart.Click += buttonStart_Click;
             // 
             // pictureBox1
             // 
@@ -79,7 +79,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(307, 195);
             Controls.Add(pictureBox1);
-            Controls.Add(buttonResult);
+            Controls.Add(buttonStart);
             Controls.Add(label1);
             Controls.Add(enteringNumber);
             Name = "Form1";
@@ -93,7 +93,7 @@
 
         private TextBox enteringNumber;
         private Label label1;
-        private Button buttonResult;
+        private Button buttonStart;
         private PictureBox pictureBox1;
     }
 }
