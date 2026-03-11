@@ -70,7 +70,7 @@ namespace CSharp.lab2._1
             try
             {
                 number = int.Parse(this.enteringNumber.Text);
-                if (number > 9999 || number < 1)
+                if (number > 9999)
                 {
                     MessageBox.Show("Введите корректное число");
                     return;
