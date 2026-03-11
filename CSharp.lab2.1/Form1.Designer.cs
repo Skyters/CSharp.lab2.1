@@ -33,6 +33,7 @@
             label1 = new Label();
             buttonStart = new Button();
             pictureBox1 = new PictureBox();
+            buttonTask = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -73,11 +74,22 @@
             pictureBox1.TabIndex = 4;
             pictureBox1.TabStop = false;
             // 
+            // buttonTask
+            // 
+            buttonTask.Location = new Point(4, 65);
+            buttonTask.Name = "buttonTask";
+            buttonTask.Size = new Size(94, 29);
+            buttonTask.TabIndex = 5;
+            buttonTask.Text = "Задание";
+            buttonTask.UseVisualStyleBackColor = true;
+            buttonTask.Click += buttonTask_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(307, 195);
+            Controls.Add(buttonTask);
             Controls.Add(pictureBox1);
             Controls.Add(buttonStart);
             Controls.Add(label1);
@@ -95,5 +107,6 @@
         private Label label1;
         private Button buttonStart;
         private PictureBox pictureBox1;
+        private Button buttonTask;
     }
 }

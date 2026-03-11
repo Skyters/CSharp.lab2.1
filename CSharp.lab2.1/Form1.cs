@@ -75,7 +75,7 @@ namespace CSharp.lab2._1
         private void buttonStart_Click(object sender, EventArgs e)
         {
             int number;
-            
+
             try
             {
                 number = int.Parse(this.enteringNumber.Text);
@@ -85,16 +85,21 @@ namespace CSharp.lab2._1
                     return;
                 }
             }
-            catch (FormatException) 
+            catch (FormatException)
             {
                 MessageBox.Show("Введите корректное число");
                 return;
             }
-            
+
             Properties.Settings.Default.number = number;
             Properties.Settings.Default.Save();
 
             MessageBox.Show(Logic.Result(number));
+        }
+
+        private void buttonTask_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Дано натуральное число от 1 до 9999, определяющее стоимость товара в копейках. Выразить стоимость в рублях и копейках, например, 3 рубля 21 копейка, 15 рублей 5 копеек, 1 рубль ровно и т. п.");
         }
     }
 }
